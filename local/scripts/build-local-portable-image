@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo 'Building images...'
+
+docker build \
+  --build-arg PROJECT_NAME="resource" \
+  --build-arg PROJECT_VERSION="0.0.1" \
+  --tag resource-server:local-portable \
+  --rm \
+  .
